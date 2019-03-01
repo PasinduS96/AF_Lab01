@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <script>
+            
+            console.log("Hello World 1"); //Hello World Displayed
+
+            //Question 01
+            //Create function to display hello world in console (Console can be open in google chrome by pressing f11(in windows) or by right click on browser => inspect)
+            var f1 = function(){
+
+                console.log("Hello world 2");
+                
+            } 
+
+            //Passing early created funtion f1 as parameter to another function f2 and calling f1 inside the f2
+            function f2(fun){
+
+                fun();
+            }
+
+            //Calling f2 output => Hello World 1
+            f2(f1);
+
+            //Question 02
+            //Creating function inside the object
+            var obj1 = {
+
+                f3 : function (){
+
+                    console.log("Hello World 3");
+                    
+                }
+            }
+            
+            //calling function inside the object
+            //Output => Hello World 3
+            obj1.f3();
+        
+        
+        </script>
+    </body>
+</html>

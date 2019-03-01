@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script>
+            
+            var vehicleName = "Toyota";
+
+            function printVehicleName(vehicleName){
+
+                console.log(vehicleName);
+                
+            }
+
+            var Vehicle = {
+
+                vehicleName : "Benz",
+                getVehicleName: function(){
+
+                    printVehicleName(this.vehicleName);
+                }
+
+            }
+
+            Vehicle.getVehicleName();
+            printVehicleName(vehicleName);
+
+        
+        </script>
+    </body>
+</html>

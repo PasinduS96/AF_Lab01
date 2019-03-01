@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script>
+            
+            /*
+            fetch('http://api.github.com/users')
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(myJson) {
+                console.log(JSON.stringify(myJson));
+            });
+        */
+
+        //method1
+        const getUsers = () =>{
+
+            return fetch('http://api.github.com/users')
+            .then(res => res.json())
+            .then(users => console.log(users))
+        }
+        getUsers();
+
+        //method2
+        
+
+        </script>
+    </body>
+</html>

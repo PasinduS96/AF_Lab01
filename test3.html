@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <script>
+                
+            //Create function to accept tax precentage 
+            function calcTax(taxPct){
+
+                //Create function to accept amount and return it to first function 
+                return function(amount){
+
+                    return (amount + (amount * taxPct/100)); // Return total amount
+                }
+            }
+
+            //Passing tax amount to function and calling finction 
+            /*
+                this line represent
+
+                var t = function(amount){
+
+                    return (amount + (amount * taxPct/100)); // Return total amount
+                }
+                
+                t represent a function which return from called function,then we can pass amount by calling t(amount);
+
+            */
+            var t = calcTax(10); 
+
+            //passing amount and calling function which returend to the c
+            
+            console.log(t(20000));
+            
+        
+        </script>
+    </body>
+</html>
